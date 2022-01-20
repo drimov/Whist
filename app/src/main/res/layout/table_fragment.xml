@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.view.TableFragment">
+
+    <data>
+
+        <variable
+            name="tableViewModel"
+            type="com.example.whist.ui.viewmodels.table.TableViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_table"
+            android:layout_width="wrap_content"
+            android:layout_height="335dp"
+            android:layout_gravity="center"
+            tools:listitem="@layout/player_item" />
+
+        <ProgressBar
+            android:id="@+id/loading_spinner_table"
+            style="?android:attr/progressBarStyle"
+            goneIfNotNull="@{tableViewModel.players}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/buttonTbBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/btn_l_start_margin"
+            android:layout_marginBottom="@dimen/btn_bottom_margin"
+            android:backgroundTint="@color/gold"
+            android:text="@string/button_leave"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonTbNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/btn_r_end_margin"
+            android:layout_marginBottom="@dimen/btn_bottom_margin"
+            android:backgroundTint="@color/gold"
+            android:text="@string/button_start"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textViewTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="@{tableViewModel.table}"
+            android:textColor="@color/gold"
+            android:textSize="@dimen/text_large_size"
+            tools:text="@string/table_name" />
+        <!-- -->
+
+    </FrameLayout>
+</layout>

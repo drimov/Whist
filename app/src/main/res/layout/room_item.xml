@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="room"
+            type="com.example.whist.data.domain.TableGame" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="4dp"
+            android:layout_height="64dp"
+            android:layout_weight="0"
+            android:background="@color/gold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|center_vertical"
+            android:text="@{room.name}"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:autoSizeTextType="none"
+            tools:text="Nom de table" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="0"
+            app:lockOrNot="@{room.private}"
+            tools:srcCompat="@drawable/ic_baseline_lock_open_24" />
+
+    </LinearLayout>
+</layout>

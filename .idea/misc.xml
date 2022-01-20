@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.4036458333333333" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/drawable-v24/ic_sharp_vignette_24.xml" value="0.10555555555555556" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/drawable/cursor.xml" value="0.4036458333333333" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/drawable/ic_heart_1.xml" value="0.1" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/drawable/ic_launcher_whist.xml" value="0.2328125" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/drawable/ic_lock_background.xml" value="0.2328125" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/drawable/ic_lock_foreground.xml" value="0.2328125" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/drawable/ic_lock_open_background.xml" value="0.4036458333333333" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/drawable/ic_lock_open_foreground.xml" value="0.4036458333333333" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/drawable/ic_person_background.xml" value="0.1" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/drawable/ic_person_foreground.xml" value="0.1" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/drawable/ic_round_lock_24.xml" value="0.4036458333333333" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/drawable/ic_sharp_error_24.xml" value="0.4036458333333333" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/drawable/ic_sharp_person_24.xml" value="0.4036458333333333" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/drawable/whist.xml" value="0.3974358974358974" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/font/font.xml" value="0.246875" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/layout/activity_main.xml" value="0.2368659420289855" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/layout/alert_dialog.xml" value="0.1" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/layout/custom_dialog.xml" value="1.5" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/layout/fragment_create_table.xml" value="0.33" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/layout/fragment_home.xml" value="0.3451086956521739" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/layout/fragment_loading.xml" value="0.30117753623188404" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/layout/fragment_login_table.xml" value="0.33" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/layout/fragment_menu.xml" value="0.30117753623188404" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/layout/fragment_room.xml" value="0.25" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/layout/player_item.xml" value="0.23007246376811594" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/layout/preview_fragment.xml" value="0.23007246376811594" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/layout/process_loading.xml" value="0.33" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/layout/room_item.xml" value="0.5" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/layout/table_fragment.xml" value="0.25" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/mipmap-anydpi-v26/ic_lock_open.xml" value="0.4036458333333333" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/mipmap-anydpi-v26/ic_lock_open_round.xml" value="0.4036458333333333" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/mipmap-anydpi-v26/ic_lock_round.xml" value="0.4036458333333333" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/mipmap-anydpi-v26/ic_person.xml" value="0.4036458333333333" />
+        <entry key="..\:/Dev/AndroidStudioProjects/Whist/app/src/main/res/mipmap-anydpi-v26/ic_person_round.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SuppressKotlinCodeStyleNotification">
+    <option name="disableForAll" value="true" />
+  </component>
+</project>

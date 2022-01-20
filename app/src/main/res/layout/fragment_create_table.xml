@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:importantForAutofill="noExcludeDescendants"
+    tools:ignore="UnusedAttribute">
+
+    <data>
+
+        <variable
+            name="createTable"
+            type="com.example.whist.ui.viewmodels.createTable.CreateTableViewModel" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.view.CreateTableFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/containerUserCreate"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:gravity="top"
+                android:hint="@string/hint_username"
+                android:textColorHint="@color/gold"
+                app:boxStrokeColor="@color/green_dark"
+                app:counterEnabled="true"
+                app:counterMaxLength="@integer/max_length_name"
+                app:helperText="@string/hint_required"
+                app:helperTextTextColor="@color/gold_2"
+                app:hintAnimationEnabled="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.13"
+                app:startIconDrawable="@drawable/ic_sharp_person_24">
+                <!--            -->
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextUserCreate"
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:background="@color/green_bg"
+                    android:gravity="bottom"
+                    android:padding="@dimen/padding5"
+                    android:textColor="#FBC02D"
+                    android:textCursorDrawable="@drawable/cursor"
+                    tools:text="@string/hint_username" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--                 android:background="@android:color/transparent" disable box
+
+                     -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/containerTable"
+                android:layout_width="355dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="24dp"
+                android:gravity="top"
+                android:hint="@string/table_name"
+                android:textColorHint="@color/gold"
+                app:boxStrokeColor="@color/green_dark"
+                app:counterEnabled="true"
+                app:counterMaxLength="@integer/max_counter_length"
+                app:helperText="@string/hint_required"
+                app:helperTextTextColor="@color/gold_2"
+                app:layout_constraintEnd_toEndOf="@+id/containerUserCreate"
+                app:layout_constraintStart_toStartOf="@+id/containerUserCreate"
+                app:layout_constraintTop_toBottomOf="@+id/containerUserCreate"
+                app:startIconDrawable="@drawable/ic_sharp_vignette_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="bottom"
+                    android:padding="@dimen/padding5"
+                    android:textColor="@color/gold_2"
+                    android:textCursorDrawable="@drawable/cursor"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    tools:text="@string/hint_table" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textViewPrivate"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="@string/table_private"
+                android:textAlignment="center"
+                android:textColor="@color/gold_2"
+                app:layout_constraintStart_toStartOf="@+id/containerTable"
+                app:layout_constraintTop_toBottomOf="@+id/containerTable" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchPrivacy"
+                togglePrivacy="@{createTable.privacy}"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="64dp"
+                android:textAlignment="center"
+                android:textColor="@color/gold_2"
+                android:textOff="@string/switch_off"
+                android:textOn="@string/switch_on"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPrivate"
+                app:layout_constraintEnd_toEndOf="@+id/containerTable"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/textViewPrivate"
+                app:layout_constraintTop_toTopOf="@+id/textViewPrivate"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:text="OFF" />
+
+
+            <Button
+                android:id="@+id/buttonCreateBack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginBottom="35dp"
+                android:text="@string/button_cancel"
+                android:textColor="@color/green_dark"
+                app:backgroundTint="@color/gold_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/buttonCreateNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="75dp"
+                android:text="@string/button_create"
+                android:textColor="@color/green_dark"
+                app:backgroundTint="@color/gold_2"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonCreateBack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/buttonCreateBack"
+                app:layout_constraintTop_toTopOf="@+id/buttonCreateBack"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/containerPwdCreate"
+                privateOrNot="@{createTable.privacy}"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="24dp"
+                android:gravity="top"
+                android:hint="@string/table_password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/gold_2"
+                app:boxStrokeColor="@color/green_dark"
+                app:counterEnabled="true"
+                app:counterMaxLength="@integer/max_counter_length"
+                app:endIconCheckable="false"
+                app:endIconMode="password_toggle"
+                app:helperText="@string/hint_required"
+                app:helperTextTextColor="@color/gold_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/containerTable"
+                app:layout_constraintStart_toStartOf="@+id/containerTable"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPrivate"
+                app:layout_constraintVertical_bias="0.0"
+                app:startIconDrawable="@drawable/ic_round_lock_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextCreatePwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="bottom"
+                    android:padding="@dimen/padding5"
+                    android:textColor="@color/gold_2"
+                    android:textCursorDrawable="@drawable/cursor"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    tools:text="@string/hint_password" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Process loading -->
+            <include
+                android:id="@+id/progressLoading"
+                layout="@layout/process_loading"
+                privateOrNot="@{createTable.loadingTime}"
+                android:visibility="gone" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</layout>

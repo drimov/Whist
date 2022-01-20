@@ -1,0 +1,87 @@
+<resources>
+    <!--                STRINGS                -->
+
+    <string name="app_name">Whist</string>
+    <string name="preference_file_key">com.example.whist</string>
+    <string name="token_key">token</string>
+    <string name="topic">topic</string>
+    <string name="msg_subscribed">Success subscribe</string>
+    <string name="msg_subscribe_failed">Failed subscribe</string>
+    <string name="msg_unsubscribed">Success unsubscribe</string>
+    <string name="msg_unsubscribe_failed">Failed unsubscribe</string>
+
+
+    <string name="play_button">Play</string>
+    <string name="room_button">View Room</string>
+    <string name="creation_button">Create Table</string>
+
+    <string name="table_name">Table name</string>
+    <string name="table_private">Private</string>
+    <string name="table_password">Password</string>
+
+
+    <string name="button_cancel">Cancel</string>
+    <string name="button_create">Create</string>
+    <string name="button_join">Join</string>
+    <string name="button_leave">Leave</string>
+    <string name="button_start">Start Game</string>
+
+    <!-- Switch -->
+    <string name="switch_on">ON</string>
+    <string name="switch_off">OFF</string>
+
+
+    <!-- Text Help error -->
+    <string name="msg_token_fmt" translatable="false">FCM registration Token: %s</string>
+    <string name="msg_err_txt_spc" translatable="false">Can\'t contains %s or special chars</string>
+    <string name="msg_err_txt_nb" translatable="false">Minimun 4 Characters</string>
+    <string name="msg_err_txt_cc" translatable="false">Must contains alpha numeric characters</string>
+    <!-- Alert Dialog error -->
+    <string name="msg_err_txt_ad_usr" translatable="false">\n\n Username : \ </string>
+    <string name="msg_err_txt_ad_pwd" translatable="false">\n\n Password : \ </string>
+    <string name="msg_err_txt_ad_table" translatable="false">\n\n Table : \ </string>
+    <string name="msg_err_txt_ad_usr_inc" translatable="false">\n\n Username incorrect</string>
+    <string name="msg_err_txt_ad_pwd_inc" translatable="false">\n\n Password incorrect</string>
+    <string name="msg_err_txt_ad_usr_exist" translatable="false">\n\n Username already exist</string>
+    <string name="msg_err_txt_ad_table_exist" translatable="false">\n\n Table name already exist</string>
+    <string name="msg_err_txt_ad_if" translatable="false">Invalid Form</string>
+    <string name="button_text_ad" translatable="false">Ok</string>
+    <string name="title_al" translatable="false">Error</string>
+    <string name="alpha_numeric">^[\\w\\x20\\xC0-\\xFF]+</string>
+    <!-- LOADING PROCESS-->
+    <string name="text_loading_process">Please wait …</string>
+
+    <!--                IMG DESCRIBES                -->
+    <string name="desc_whist">Logo App</string>
+    <!--                DIMENSION                -->
+    <integer name="delay_load">3000</integer>
+    <integer name="vertical_spacing_value">10</integer>
+
+    <!-- button global custom -->
+    <dimen name="btn_corner">18dp</dimen>
+    <dimen name="btn_height">48dp</dimen>
+    <!-- button padding custom -->
+    <dimen name="btn_l_start_margin">75dp</dimen>
+    <dimen name="btn_bottom_margin">35dp</dimen>
+    <dimen name="btn_r_end_margin">75dp</dimen>
+
+    <integer name="max_length_name">20</integer>
+    <dimen name="padding5">5dp</dimen>
+
+    <!-- LOG/CREATE TABLE -->
+    <string name="hint_required">Required*</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_table">Table name</string>
+    <string name="hint_password">Password</string>
+    <integer name="max_counter_length">20</integer>
+    <integer name="max_name_length">20</integer>
+
+
+
+    <!-- TextSize -->
+    <dimen name="text_title_size">45sp</dimen>
+    <dimen name="text_small_size">25sp</dimen>
+    <dimen name="text_large_size">32sp</dimen>
+    <dimen name="text_regular_size">24sp</dimen>
+
+</resources>

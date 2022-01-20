@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.view.PreviewFragment">
+
+    <data>
+
+        <variable
+            name="previewViewModel"
+            type="com.example.whist.ui.viewmodels.preview.PreviewViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="335dp"
+            android:layout_gravity="center"
+            tools:listitem="@layout/player_item" />
+
+        <ProgressBar
+            android:id="@+id/loading_spinner_prev"
+            style="?android:attr/progressBarStyle"
+            goneIfNotNull="@{previewViewModel.players}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            />
+
+        <Button
+            android:id="@+id/buttonPrevBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/btn_l_start_margin"
+            android:layout_marginBottom="@dimen/btn_bottom_margin"
+            android:backgroundTint="@color/gold"
+            android:text="@string/button_cancel"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonPrevNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/btn_r_end_margin"
+            android:layout_marginBottom="@dimen/btn_bottom_margin"
+            android:backgroundTint="@color/gold"
+            count="@{previewViewModel.countPlayer}"
+            android:text="@string/button_join"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textViewPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="@{previewViewModel.table.name}"
+            android:textColor="@color/gold"
+            android:textSize="@dimen/text_large_size"
+            tools:text="@string/table_name" />
+        <!-- goneIfNotNull="@{roomViewModel.room}"-->
+
+    </FrameLayout>
+</layout>

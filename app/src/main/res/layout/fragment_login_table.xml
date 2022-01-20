@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+        <variable
+            name="logTable"
+            type="com.example.whist.ui.viewmodels.login.LoginTableViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.view.LoginTableFragment">
+
+        <TextView
+            android:id="@+id/textViewLogTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gold"
+            android:textSize="@dimen/text_large_size"
+            android:text="@{logTable.table.name}"
+            app:layout_constraintBottom_toTopOf="@+id/containerUserLog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Table Name" />
+        <!--   android:text="@{loginTableViewModel.tableGame.currentTableGame.tableName.toString()}"
+        android:textCursorDrawable="@drawable/cursor"
+        -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/containerUserLog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="top"
+            android:hint="@string/hint_username"
+            android:textColorHint="@color/gold"
+            app:boxStrokeColor="@color/black"
+            app:counterEnabled="true"
+            app:counterMaxLength="@integer/max_length_name"
+            app:counterTextAppearance="@style/Whist.TextHelper"
+            app:helperText="@string/hint_required"
+            app:helperTextTextAppearance="@style/Whist.TextHelper"
+            app:helperTextTextColor="@color/gold"
+            app:hintTextAppearance="@style/Whist.TextHelper"
+            app:hintTextColor="@color/gold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textViewLogTable"
+            app:startIconDrawable="@drawable/ic_sharp_person_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextUserLog"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:background="@color/green_bg"
+                android:gravity="bottom"
+                android:isScrollContainer="false"
+                android:padding="@dimen/padding5"
+
+                android:textColor="@color/gold"
+                tools:text="@string/hint_username"
+                android:textCursorDrawable="@drawable/cursor"/>
+            <!--  android:textCursorDrawable="@drawable/cursor"-->
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/containerPwdLog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="top"
+            privateOrNot="@{logTable.table.private}"
+            android:hint="@string/hint_password"
+            android:textColorHint="@color/gold"
+            app:boxBackgroundColor="@null"
+            app:boxStrokeColor="@color/black"
+            app:counterEnabled="true"
+            app:counterMaxLength="@integer/max_counter_length"
+
+            app:counterTextAppearance="@style/Whist.TextHelper"
+            app:endIconMode="password_toggle"
+            app:helperText="@string/hint_required"
+            app:helperTextTextAppearance="@style/Whist.TextHelper"
+            app:helperTextTextColor="@color/gold"
+            app:hintTextAppearance="@style/Whist.TextHelper"
+            app:hintTextColor="@color/gold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/containerUserLog"
+            app:startIconDrawable="@drawable/ic_round_lock_24">
+            <!--  app:counterTextAppearance="@style/Whist.TextHelper"
+             app:helperTextTextAppearance="@style/Whist.TextHelper"
+               app:hintTextAppearance="@style/Whist.TextHelper"
+            -->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPwdLog"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:background="@color/green_bg"
+                android:gravity="bottom"
+                android:inputType="textPassword"
+                android:padding="@dimen/padding5"
+                android:textColor="@color/gold"
+                tools:text="@string/hint_password"
+                android:textCursorDrawable="@drawable/cursor"/>
+            <!--  android:textCursorDrawable="@drawable/cursor" -->
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonLogTableBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/btn_l_start_margin"
+            android:layout_marginBottom="@dimen/btn_bottom_margin"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/button_cancel"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/gold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonLogTableNext"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Cancel" />
+
+        <Button
+            android:id="@+id/buttonLogTableNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/btn_r_end_margin"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/button_join"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/gold"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonLogTableBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/buttonLogTableBack"
+            tools:text="Join" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
