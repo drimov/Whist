@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "227887999927",
+    "project_id": "whist-70237",
+    "storage_bucket": "whist-70237.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227887999927:android:09c70cf4c7be642b1e9632",
+        "android_client_info": {
+          "package_name": "com.example.whist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "227887999927-jaeoa2rjho6rh517ghlpqvn031ulahhj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.whist",
+            "certificate_hash": "e3db4a83db787aaf0a55ae44ffb07064ad0b8363"
+          }
+        },
+        {
+          "client_id": "227887999927-uajcq6ef8jncit3fksre22hf4kdketn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKbj9Hnk670Z0ihIkLz5oYRRGrQle5SMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "227887999927-uajcq6ef8jncit3fksre22hf4kdketn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
